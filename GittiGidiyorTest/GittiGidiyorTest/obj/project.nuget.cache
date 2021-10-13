@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wDjT60jUm2m10GfoFAQBk1DGG52e4yGRpWN3P14I6z+ruWk6OWX0nu3y91qlXjJOsf7JrXNwPS9bz0WC27P9eQ==",
+  "dgSpecHash": "o0uAalTi0e7z9xZIDnXICQ+ozecAK8FE4mToVbZMBXEa2GWXBgLZ9y26FEl0fNLCJOCmwkNotYUttX/fWJuvVg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Abdullah\\Desktop\\GittiGidiyorTest\\GittiGidiyorTest\\GittiGidiyorTest.csproj",
+  "projectFilePath": "C:\\Users\\Abdullah\\Documents\\GitHub\\GittiGidiyorBDD\\GittiGidiyorTest\\GittiGidiyorTest\\GittiGidiyorTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Abdullah\\.nuget\\packages\\bodi\\1.5.0\\bodi.1.5.0.nupkg.sha512",
     "C:\\Users\\Abdullah\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",

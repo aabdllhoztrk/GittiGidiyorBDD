@@ -26,9 +26,10 @@ namespace n11Test.Hooks
             options.AddArgument("disable-popup-blocking");
             options.AddArgument("disable-notifications");          
             options.AddArgument("--start-maximized");
-            _driver = new ChromeDriver(options);                   
+            _driver = new ChromeDriver(ChromeDriverService.CreateDefaultService(), options, TimeSpan.FromMinutes(3));                  
             _driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
             _driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(10);
+            
             ScenarioContext.Current.Add("currentDriver", _driver);
         }
 

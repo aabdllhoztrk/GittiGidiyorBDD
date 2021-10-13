@@ -14,31 +14,30 @@ namespace n11Test.Steps
     {
 
         private readonly IWebDriver _driver;
+        private CartPage _cartPage;
         public CartSteps()
         {
             _driver = ScenarioContext.Current.Get<IWebDriver>("currentDriver");
+            _cartPage = new CartPage(_driver);
         }
 
         [Then(@"I should see third product is shown")]
         public void ThenIShouldSeeThirdProductİsShown()
         {
-            CartPage cartPage = new CartPage(_driver);
-            Assert.That(cartPage.ValidateProductinCart(), Is.True);
+            Assert.That(_cartPage.ValidateProductinCart(), Is.True);
         }
         
         [Then(@"I remove product")]
         public void ThenIRemoveProduct()
         {
-            CartPage cartPage = new CartPage(_driver);
-            cartPage.RemoveProduct();
+            _cartPage.RemoveProduct();
             
         }
 
         [Then(@"I validate product not exist in cart")]
         public void ThenIValidateProductNotExistİnCart()
         {
-            CartPage cartPage = new CartPage(_driver);
-            cartPage.ValidateProductnotAppear();
+            _cartPage.ValidateProductnotAppear();
         }
 
 

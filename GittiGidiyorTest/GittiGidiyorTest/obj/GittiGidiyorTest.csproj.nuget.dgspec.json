@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Abdullah\\Desktop\\GittiGidiyorTest\\GittiGidiyorTest\\GittiGidiyorTest.csproj": {}
+    "C:\\Users\\Abdullah\\Documents\\GitHub\\GittiGidiyorBDD\\GittiGidiyorTest\\GittiGidiyorTest\\GittiGidiyorTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Abdullah\\Desktop\\GittiGidiyorTest\\GittiGidiyorTest\\GittiGidiyorTest.csproj": {
+    "C:\\Users\\Abdullah\\Documents\\GitHub\\GittiGidiyorBDD\\GittiGidiyorTest\\GittiGidiyorTest\\GittiGidiyorTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Abdullah\\Desktop\\GittiGidiyorTest\\GittiGidiyorTest\\GittiGidiyorTest.csproj",
+        "projectUniqueName": "C:\\Users\\Abdullah\\Documents\\GitHub\\GittiGidiyorBDD\\GittiGidiyorTest\\GittiGidiyorTest\\GittiGidiyorTest.csproj",
         "projectName": "GittiGidiyorTest",
-        "projectPath": "C:\\Users\\Abdullah\\Desktop\\GittiGidiyorTest\\GittiGidiyorTest\\GittiGidiyorTest.csproj",
+        "projectPath": "C:\\Users\\Abdullah\\Documents\\GitHub\\GittiGidiyorBDD\\GittiGidiyorTest\\GittiGidiyorTest\\GittiGidiyorTest.csproj",
         "packagesPath": "C:\\Users\\Abdullah\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Abdullah\\Desktop\\GittiGidiyorTest\\GittiGidiyorTest\\obj\\",
+        "outputPath": "C:\\Users\\Abdullah\\Documents\\GitHub\\GittiGidiyorBDD\\GittiGidiyorTest\\GittiGidiyorTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Abdullah\\AppData\\Roaming\\NuGet\\NuGet.Config",

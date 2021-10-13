@@ -13,69 +13,64 @@ namespace n11Test.Steps
     {
 
         private readonly IWebDriver _driver;
+        private HomePage _homePage;
        
         public HomeSteps()
         {
             _driver = ScenarioContext.Current.Get<IWebDriver>("currentDriver");
+            _homePage = new HomePage(_driver);
         }
 
         [Given(@"I lounch the Application")]
         public void GivenILounchTheApplication()
         {
 
-            HomePage homePage = new HomePage(_driver);
-            homePage.NavigateToUrl();
+            _homePage.NavigateToUrl();
             
         }
 
         [Then(@"I should see  page title")]
         public void ThenIShouldSeePageTitle()
         {
-            HomePage homePage = new HomePage(_driver);
-            homePage.ValidatePageTittle();
+            
+            _homePage.ValidatePageTittle();
         }
 
 
         [When(@"I have entered ""(.*)"" into SearchBox")]
         public void WhenIHaveEnteredİntoSearchBox(string p0)
         {
-            HomePage homePage = new HomePage(_driver);
-            homePage.SearchforProduct("Samsung");
+            _homePage.SearchforProduct("Samsung");
         }
 
         [Then(@"Labels related to ""(.*)"" are shown on the results page")]
         public void ThenLabelsRelatedToAreShownOnTheResultsPage(string p0)
         {
-            HomePage homePage = new HomePage(_driver);
-            homePage.ValidatePoduct();
+            _homePage.ValidatePoduct();
         }
 
         [When(@"I locate second page")]
         public void WhenILocateSecondPageAboutSamsung()
         {
-            HomePage homePage = new HomePage(_driver);
-            homePage.LocateSecondPage();
+            _homePage.LocateSecondPage();
         }
 
         [Then(@"I should know second page is shown")]
         public void ThenIShouldKnowSecondPageİsShown()
         {
-            HomePage homePage = new HomePage(_driver);
-            homePage.VallidateSecondPage();
+            _homePage.VallidateSecondPage();
         }
 
         [When(@"I add third product to Cart")]
         public void WhenIAddThirdProductToCart()
         {
-            HomePage homePage = new HomePage(_driver);
-            homePage.AddtoCard();
+            _homePage.AddtoCard();
         }
 
         [When(@"I click Cart Button")]
         public void WhenIClickCartButton()
         {
-            HomePage homePage = new HomePage(_driver);
-            homePage.LocateCartPage();
+            _homePage.LocateCartPage();
         }
 
 
